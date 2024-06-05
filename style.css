@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+body {
+  background-image: url("./img/1_5132403983628894302.jpg");
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.1);
+  animation: l3 2s linear forwards;
+  gap: 20px;
+}
+
+.text-content {
+  color: white;
+}
+
+.text-content h1 {
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  text-align: center;
+  font-size: 20px;
+  animation: l2 5s linear infinite;
+}
+
+.card-form {
+  width: 500px;
+  border: 1px solid white;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  animation: l1 5s linear infinite;
+}
+
+.card-form form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.card-form form h2 {
+  margin: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.card-form form i {
+  position: relative;
+  color: white;
+  left: 180px;
+  top: 58px;
+}
+
+.card-form form input[type="email"],
+.card-form form input[type="password"] {
+  background: none;
+  outline: none;
+  border: none;
+  margin: 20px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  border-bottom: 2px solid white;
+  caret-color: purple;
+}
+
+.card-form form input[type="email"]::placeholder,
+.card-form form input[type="password"]::placeholder {
+  color: white;
+}
+
+.check {
+  margin: 20px;
+}
+
+.check label {
+  margin-left: 10px;
+}
+
+.check label:hover {
+  color: purple;
+  cursor: pointer;
+}
+
+.card-form form input[type="submit"] {
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card-form form input[type="submit"]:hover {
+  background-color: rgba(128, 0, 128, 0.541);
+  color: white;
+}
+
+.card-form form a {
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.card-form form a:hover {
+  color: purple;
+}
+
+@keyframes l1 {
+  0% {
+    box-shadow: 0 0 0 0;
+  }
+  30% {
+    box-shadow: 0 0 30px 0 white;
+  }
+  60% {
+    box-shadow: 0 0 0 0;
+  }
+  80% {
+    box-shadow: 0 0 30px 0 white;
+  }
+  100% {
+    box-shadow: 0 0 0 0;
+  }
+}
+
+@keyframes l2 {
+  25% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes l3 {
+  to {
+    transform: scale(1);
+  }
+}
